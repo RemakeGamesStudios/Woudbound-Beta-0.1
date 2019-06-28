@@ -39,6 +39,8 @@ public class PlayerMovement : MonoBehaviour {
     public Item bow;
     // Use this for initialization
     void Start () {
+        //reserting playerHealth in the ScriptableObject
+        currentHealth.RuntimeValue = currentHealth.initialValue; // 6
         currentState = PlayerState.walk;
         animator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -65,7 +67,7 @@ public class PlayerMovement : MonoBehaviour {
         else if (Input.GetButtonDown("Second Weapon") && currentState != PlayerState.attack
            && currentState != PlayerState.stagger)
         {
-            if (playerInventory.CheckForItem(bow))
+            //if (playerInventory.CheckForItem(bow))
             {
                 StartCoroutine(SecondAttackCo());
             }
@@ -169,8 +171,11 @@ public class PlayerMovement : MonoBehaviour {
 
     public void Knock(float knockTime, float damage)
     {
-        currentHealth.RuntimeValue -= damage;
+        Debug.Log(currentHealth.RuntimeValue + " " + damage);
+        currentHealth.RuntimeValue -= damage / 100; // for trailer
+        //Debug.Log()
         playerHealthSignal.Raise();
+        //currentHealth.RuntimeValue = 6;
         if (currentHealth.RuntimeValue > 0)
         {
             playerHit.Raise();
@@ -182,8 +187,10 @@ public class PlayerMovement : MonoBehaviour {
 
     private IEnumerator KnockCo(float knockTime)
     {
+            Debug.Log(knockTime);
         if (myRigidbody != null)
         {
+            Debug.Log(knockTime);
             StartCoroutine(FlashCo());
             yield return new WaitForSeconds(knockTime);
             myRigidbody.velocity = Vector2.zero;

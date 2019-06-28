@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour {
 
     private void OnEnable()
     {
-        transform.position = homePosition;
+        //transform.position = homePosition;
         health = maxHealth.initialValue;
         currentState = EnemyState.idle;
     }

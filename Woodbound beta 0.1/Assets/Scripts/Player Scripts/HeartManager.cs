@@ -38,14 +38,14 @@ public class HeartManager : MonoBehaviour {
             if(i <= tempHealth-1)
             {
                 //Full Heart
-                hearts[i].sprite = fullHeart;
+                //hearts[i].sprite = fullHeart;
             }else if( i >= tempHealth)
             {
                 //empty heart
-                hearts[i].sprite = emptyHeart;
+                //hearts[i].sprite = emptyHeart;
             }else{
                 //half full heart
-                hearts[i].sprite = halfFullHeart;
+                //hearts[i].sprite = halfFullHeart;
             }
         }
 

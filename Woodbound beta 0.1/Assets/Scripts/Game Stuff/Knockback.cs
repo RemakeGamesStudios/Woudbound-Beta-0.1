@@ -5,7 +5,7 @@ using UnityEngine;
 public class Knockback : MonoBehaviour {
 
     public float thrust;
-    public float knockTime;
+    public float knockTime = 1f;
     public float damage;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -22,22 +22,31 @@ public class Knockback : MonoBehaviour {
                 Vector2 difference = hit.transform.position - transform.position;
                 difference = difference.normalized * thrust;
                 hit.AddForce(difference, ForceMode2D.Impulse);
+                //StartCoroutine(stopKnockBackCo(hit, difference));
                 if (other.gameObject.CompareTag("enemy") && other.isTrigger)
                 {
+                    Debug.Log("hittt enemy");
                     hit.GetComponent<Enemy>().currentState = EnemyState.stagger;
                     other.GetComponent<Enemy>().Knock(hit, knockTime, damage);
                 }
-                if(other.gameObject.CompareTag("Player"))
+                if (other.gameObject.CompareTag("Player"))
                 {
                     if (other.GetComponent<PlayerMovement>().currentState != PlayerState.stagger)
                     {
+                        Debug.Log("hittt player");
                         hit.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
-                        other.GetComponent<PlayerMovement>().Knock(knockTime, damage);
+                        other.GetComponent<PlayerMovement>().Knock(knockTime, damage); 
                     }
                 }
             }
         }
     }
 
+    private IEnumerator stopKnockBackCo(Rigidbody2D hit, Vector2 difference)
+    {
+        yield return new WaitForSeconds(1f);
+        hit.AddForce(-difference, ForceMode2D.Impulse);
+        hit.GetComponent<PlayerMovement>().currentState = PlayerState.idle;
+    }
 
 }
