@@ -1,55 +1,64 @@
 fileFormatVersion: 2
-guid: 5731c6cd4df974aef8337a5175e5fc58
+guid: 24f341347640ef940803cf9a977752cb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: orge_0
+      213: 1697233997969902998
+    second: fat_bat_sprite_sheet_0
   - first:
-      213: 21300002
-    second: orge_1
+      213: 8904689875662089363
+    second: fat_bat_sprite_sheet_1
   - first:
-      213: 21300004
-    second: orge_2
+      213: 4217738059078538781
+    second: fat_bat_sprite_sheet_2
   - first:
-      213: 21300006
-    second: orge_3
+      213: 1017172835935261486
+    second: fat_bat_sprite_sheet_3
   - first:
-      213: 21300008
-    second: orge_4
+      213: 5566906929363705847
+    second: fat_bat_sprite_sheet_4
   - first:
-      213: 21300010
-    second: orge_5
+      213: 2272591303777488288
+    second: fat_bat_sprite_sheet_5
   - first:
-      213: 21300012
-    second: orge_6
+      213: -5248408176930743981
+    second: fat_bat_sprite_sheet_6
   - first:
-      213: 21300014
-    second: orge_7
+      213: 989257679471858908
+    second: fat_bat_sprite_sheet_7
   - first:
-      213: 21300016
-    second: orge_8
+      213: 7304160359194804217
+    second: fat_bat_sprite_sheet_8
   - first:
-      213: 21300018
-    second: orge_9
+      213: -3373759764504607264
+    second: fat_bat_sprite_sheet_9
   - first:
-      213: 21300020
-    second: orge_10
+      213: -8619869928519956513
+    second: fat_bat_sprite_sheet_10
   - first:
-      213: 21300022
-    second: orge_11
+      213: 3760899564653328416
+    second: fat_bat_sprite_sheet_11
   - first:
-      213: 21300024
-    second: orge_12
+      213: -4991089797606525782
+    second: fat_bat_sprite_sheet_12
   - first:
-      213: 21300026
-    second: orge_13
+      213: -2642601504310474154
+    second: fat_bat_sprite_sheet_13
   - first:
-      213: 21300028
-    second: orge_14
+      213: -7515829177471228595
+    second: fat_bat_sprite_sheet_14
   - first:
-      213: 21300030
-    second: orge_15
+      213: 5288803611165786718
+    second: fat_bat_sprite_sheet_15
+  - first:
+      213: 8549015755566016254
+    second: fat_bat_sprite_sheet_16
+  - first:
+      213: -5715000151968299493
+    second: fat_bat_sprite_sheet_17
+  - first:
+      213: 5613544781110006570
+    second: fat_bat_sprite_sheet_18
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -128,50 +137,17 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: orge_0
+      name: fat_bat_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
-        width: 16
-        height: 32
+        x: 22
+        y: 227
+        width: 60
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11d57168fcc31451fa7977a3038758cc
-      internalID: 21300000
+      spriteID: 64d78e6f97daa714e87bff415389dab3
+      internalID: 1697233997969902998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_1
+      name: fat_bat_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 96
-        width: 16
-        height: 32
+        x: 83
+        y: 225
+        width: 57
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddb0633b4223148529e73d7277c79f23
-      internalID: 21300002
+      spriteID: 3afea6bbba65f2544abf0554798b49b8
+      internalID: 8904689875662089363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_2
+      name: fat_bat_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 16
-        height: 32
+        x: 144
+        y: 227
+        width: 59
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9abcd70ad4de6425c840f7f5dd9ba133
-      internalID: 21300004
+      spriteID: 165436efce9def14b8da790fced42534
+      internalID: 4217738059078538781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_3
+      name: fat_bat_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
-        width: 16
-        height: 32
+        x: 202
+        y: 227
+        width: 55
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a4f4578a369f4ea1aa5aab43f71c5cf
-      internalID: 21300006
+      spriteID: 62a7b6dd73fd279448934b9edac492fe
+      internalID: 1017172835935261486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_4
+      name: fat_bat_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 16
-        height: 32
+        x: 35
+        y: 177
+        width: 26
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86bd1ba138c78492f8363019865a7fec
-      internalID: 21300008
+      spriteID: cf7437270627c5348924388376986334
+      internalID: 5566906929363705847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_5
+      name: fat_bat_sprite_sheet_5
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 32
+        x: 66
+        y: 177
+        width: 26
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc875168a445a450aab4c19be57af0a6
-      internalID: 21300010
+      spriteID: 812435dd09f0123469e56bcb6402d3ae
+      internalID: 2272591303777488288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_6
+      name: fat_bat_sprite_sheet_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 16
-        height: 32
+        x: 96
+        y: 177
+        width: 30
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2c9fdda54f3f4ed5bcb070dc44a9f71
-      internalID: 21300012
+      spriteID: b9b9b34efa545564db1f6bd20e896767
+      internalID: -5248408176930743981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_7
+      name: fat_bat_sprite_sheet_7
       rect:
         serializedVersion: 2
-        x: 48
-        y: 64
-        width: 16
-        height: 32
+        x: 22
+        y: 135
+        width: 60
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,20 +302,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e01643e00951e413ea133ab31e605bfe
-      internalID: 21300014
+      spriteID: 97f27a10d79d34540bd8ec927125c9f5
+      internalID: 989257679471858908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_8
+      name: fat_bat_sprite_sheet_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 32
+        x: 87
+        y: 133
+        width: 60
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,20 +323,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a97f05704e12a4c7d8336397c8976f3c
-      internalID: 21300016
+      spriteID: 023dea20aefdd1c4686a31eb00f80cf3
+      internalID: 7304160359194804217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_9
+      name: fat_bat_sprite_sheet_9
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 32
+        x: 148
+        y: 135
+        width: 59
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,20 +344,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8916b289077a0404aabeed52c5116fe6
-      internalID: 21300018
+      spriteID: f69482f98808d40408ae272a781fdca5
+      internalID: -3373759764504607264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_10
+      name: fat_bat_sprite_sheet_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 32
+        x: 208
+        y: 135
+        width: 56
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,20 +365,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a53140bb0e424d05a7e255de2589373
-      internalID: 21300020
+      spriteID: e8d55f4920f83d741ab042e74ecafd61
+      internalID: -8619869928519956513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_11
+      name: fat_bat_sprite_sheet_11
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 32
+        x: 35
+        y: 87
+        width: 32
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -410,19 +386,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b93d05286ec2a42ba87caa279ff871f4
-      internalID: 21300022
+      spriteID: 9c1035cd26ae1eb4fa665ed803dbf664
+      internalID: 3760899564653328416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_12
+      name: fat_bat_sprite_sheet_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
+        x: 73
+        y: 85
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -431,20 +407,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1dc285a09ae24972a3010253d9c9ecd
-      internalID: 21300024
+      spriteID: 6f3982fdd8fd2f54aa0970bcfa9da3a0
+      internalID: -4991089797606525782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_13
+      name: fat_bat_sprite_sheet_13
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 32
+        x: 108
+        y: 87
+        width: 32
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,20 +428,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edba4b11cd9a04482bbe14f29aaad79e
-      internalID: 21300026
+      spriteID: 52984423cba1c9342b20fc3092cad09e
+      internalID: -2642601504310474154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_14
+      name: fat_bat_sprite_sheet_14
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 32
+        x: 146
+        y: 87
+        width: 28
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -473,19 +449,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cab9f03054814c89bf3e4f85c1eb648
-      internalID: 21300028
+      spriteID: a1d7a63bab23ba643b47448a28c78d5c
+      internalID: -7515829177471228595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: orge_15
+      name: fat_bat_sprite_sheet_15
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
+        x: 37
+        y: 54
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -494,8 +470,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 259987271c99c4ad68be7768f24ea42b
-      internalID: 21300030
+      spriteID: 6c03f987944f4b740bde9f136f083247
+      internalID: 5288803611165786718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fat_bat_sprite_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 52
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb3172bfdc575c40806f1ecfa295f40
+      internalID: 8549015755566016254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fat_bat_sprite_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 54
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f7557b9fc0fad4aa8d4a2841ee6bdb
+      internalID: -5715000151968299493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fat_bat_sprite_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 54
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a45ce1f054ae64aa8999a68af1a886
+      internalID: 5613544781110006570
       vertices: []
       indices: 
       edges: []
@@ -503,7 +542,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 58f333930a0b34cb39245ce9ca223562
+    spriteID: 0e43fef6e060bce4ca5057e7522d893c
     internalID: 0
     vertices: []
     indices: 
