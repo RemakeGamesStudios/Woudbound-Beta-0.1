@@ -14,7 +14,8 @@ public class HeartManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        InitHearts();
+        //InitHearts();
+        UpdateHearts();
 	}
 
     public void InitHearts()
@@ -32,21 +33,26 @@ public class HeartManager : MonoBehaviour {
     public void UpdateHearts()
     {
         InitHearts();
-        float tempHealth = playerCurrentHealth.RuntimeValue / 2;
-        for (int i = 0; i < heartContainers.RuntimeValue; i ++)
+        float tempHealth = playerCurrentHealth.RuntimeValue;
+
+        for (int i = 0; i < 5; i ++)
         {
-            if(i <= tempHealth-1)
+            if (tempHealth - (i) <= .5 && tempHealth - (i) > 0)
+            {
+                //half full heart
+                 hearts[i].sprite = halfFullHeart;
+            }else if (i < tempHealth)
             {
                 //Full Heart
-                //hearts[i].sprite = fullHeart;
+                hearts[i].sprite = fullHeart;
+                
             }else if( i >= tempHealth)
             {
                 //empty heart
-                //hearts[i].sprite = emptyHeart;
-            }else{
-                //half full heart
-                //hearts[i].sprite = halfFullHeart;
+                hearts[i].sprite = emptyHeart;
             }
+            
+
         }
 
     }

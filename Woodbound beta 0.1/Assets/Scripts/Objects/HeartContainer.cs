@@ -12,7 +12,7 @@ public class HeartContainer : Powerup
         if(other.gameObject.CompareTag("Player"))
         {
             heartContainers.RuntimeValue += 1;
-            playerHealth.RuntimeValue = heartContainers.RuntimeValue * 2;
+            playerHealth.RuntimeValue++;
             powerupSignal.Raise();
             Destroy(this.gameObject);
         }

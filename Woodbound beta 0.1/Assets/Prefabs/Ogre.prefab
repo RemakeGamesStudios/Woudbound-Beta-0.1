@@ -105,7 +105,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676457240082076933}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 41.137695, y: -17.441774, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -270,9 +270,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   maxHealth: {fileID: 11400000, guid: 31115a927760445ae8df614cd4b9a11b, type: 2}
-  health: 0
+  health: 2
   enemyName: ogre
-  baseAttack: 0
+  baseAttack: 1
   moveSpeed: 1
   homePosition: {x: 41, y: -17}
   deathEffect: {fileID: 1198431140947087119, guid: d6f2eadd9d5d74926a0275f684319914,
