@@ -31,6 +31,7 @@ public class Switch : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("in");
         // Is it the player?
         if(other.CompareTag("Player"))
         {
