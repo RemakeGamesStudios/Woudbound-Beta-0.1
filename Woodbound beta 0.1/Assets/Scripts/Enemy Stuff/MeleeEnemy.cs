@@ -44,6 +44,14 @@ public class MeleeEnemy : log
             {
                 StartCoroutine(AttackCo());
             }
+        }//changes state to idle 
+        else if (Vector3.Distance(target.position,
+                    transform.position) > chaseRadius)
+        {
+            ChangeState(EnemyState.idle);
+            anim.SetFloat("moveX", 0);
+            anim.SetFloat("moveY", 0);
+
         }
 
     }

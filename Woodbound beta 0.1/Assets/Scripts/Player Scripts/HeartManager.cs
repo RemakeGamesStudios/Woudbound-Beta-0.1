@@ -33,6 +33,11 @@ public class HeartManager : MonoBehaviour {
     public void UpdateHearts()
     {
         InitHearts();
+        //makes sure player does not have more then 5 health
+        if (playerCurrentHealth.RuntimeValue > 5)
+        {
+            playerCurrentHealth.RuntimeValue = 5;
+        }
         float tempHealth = playerCurrentHealth.RuntimeValue;
 
         for (int i = 0; i < 5; i ++)
