@@ -37,6 +37,10 @@ public class PlayerMovement : MonoBehaviour {
     [Header("Projectile Stuff")]
     public GameObject projectile;
     public Item bow;
+
+    //Previous moving state
+    private bool prevMovingState = false;
+
     // Use this for initialization
     void Start () {
         //reserting playerHealth in the ScriptableObject
@@ -81,6 +85,7 @@ public class PlayerMovement : MonoBehaviour {
     private IEnumerator AttackCo()
     {
         animator.SetBool("attacking", true);
+        SoundManager.instance.PlaySound("playerAttack");
         currentState = PlayerState.attack;
         yield return null;
         animator.SetBool("attacking", false);
@@ -154,10 +159,17 @@ public class PlayerMovement : MonoBehaviour {
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
             animator.SetBool("moving", true);
+            if(prevMovingState == false)
+            {
+                SoundManager.instance.PlaySound("playerWalk");
+                prevMovingState = true;
+            }
         }
         else
         {
             animator.SetBool("moving", false);
+            prevMovingState = false;
+            SoundManager.instance.PlaySound("playerStopWalking");
         }
     }
 
