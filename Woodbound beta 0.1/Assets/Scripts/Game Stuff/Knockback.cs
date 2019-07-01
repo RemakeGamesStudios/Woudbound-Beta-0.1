@@ -23,7 +23,8 @@ public class Knockback : MonoBehaviour {
                 difference = difference.normalized * thrust;
                 hit.AddForce(difference, ForceMode2D.Impulse);
                 //StartCoroutine(stopKnockBackCo(hit, difference));
-                if (other.gameObject.CompareTag("enemy") && other.isTrigger)
+                if (other.gameObject.CompareTag("enemy") && other.isTrigger && 
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().currentState == PlayerState.attack)
                 {
                     Debug.Log("hittt enemy");
                     hit.GetComponent<Enemy>().currentState = EnemyState.stagger;

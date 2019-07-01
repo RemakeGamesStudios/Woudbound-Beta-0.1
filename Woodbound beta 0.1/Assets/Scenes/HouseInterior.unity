@@ -559,6 +559,7 @@ CompositeCollider2D:
       - {x: 0, y: -1}
       - {x: 0.625, y: -1}
   m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.000005
 --- !u!19719996 &1133573475
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -574,6 +575,7 @@ TilemapCollider2D:
   m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!50 &1133573476
 Rigidbody2D:
   serializedVersion: 4
@@ -3769,6 +3771,90 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1646596749
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2398270758763626722, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioMan
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626721, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626721, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626721, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626721, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626721, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626721, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626721, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626721, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626721, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626721, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626721, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626727, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626720, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 12dc0f0e31172d745b1c1795d8414e0c, type: 3}
+    - target: {fileID: 2398270758763626720, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5817dc80264c0434ca7c6bd85a8400df, type: 3}
 --- !u!1 &1683629799
 GameObject:
   m_ObjectHideFlags: 0
@@ -4624,6 +4710,7 @@ CompositeCollider2D:
       - {x: 3.0625, y: 4.5625}
       - {x: 3.9375, y: 4.5625}
   m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.000005
 --- !u!19719996 &2130600148
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -4639,6 +4726,7 @@ TilemapCollider2D:
   m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!50 &2130600149
 Rigidbody2D:
   serializedVersion: 4

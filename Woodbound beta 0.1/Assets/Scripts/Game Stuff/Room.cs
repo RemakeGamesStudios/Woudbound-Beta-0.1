@@ -22,6 +22,8 @@ public class Room : MonoBehaviour
                 ChangeActivation(pots[i], true);
             }
             virtualCamera.SetActive(true);
+            other.gameObject.GetComponent<PlayerMovement>().currentRoom = this.gameObject.name; // sets new name
+            GameObject.FindGameObjectWithTag("AudioMan").GetComponent<RoomSoundManager>().updateAudioClip(this.gameObject.name);
         }
     }
 
