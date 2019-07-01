@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour {
 
     [Header("State Machine")]
     public EnemyState currentState;
+    
 
     [Header("Enemy Stats")]
     public FloatValue maxHealth;
