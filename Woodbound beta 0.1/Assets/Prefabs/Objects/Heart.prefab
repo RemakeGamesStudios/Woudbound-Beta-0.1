@@ -143,3 +143,4 @@ MonoBehaviour:
   playerHealth: {fileID: 11400000, guid: d2056c37fff324b6cb19ce1eff22f208, type: 2}
   heartContainers: {fileID: 11400000, guid: b1a3bbf3a0b344158a6619fe14a324e1, type: 2}
   amountToIncrease: 2
+  isCollectedHeart: 0

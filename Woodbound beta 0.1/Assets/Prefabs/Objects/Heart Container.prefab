@@ -132,3 +132,4 @@ MonoBehaviour:
   powerupSignal: {fileID: 11400000, guid: bced594b110fa4728b35d89a74a89552, type: 2}
   heartContainers: {fileID: 11400000, guid: b1a3bbf3a0b344158a6619fe14a324e1, type: 2}
   playerHealth: {fileID: 11400000, guid: d2056c37fff324b6cb19ce1eff22f208, type: 2}
+  isCollectedHeart: 0
