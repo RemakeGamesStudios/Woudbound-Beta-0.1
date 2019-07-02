@@ -44,9 +44,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aaae4250cdb92b4eae2a694488ca8b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClips: []
-  roomNames: []
-  fadeWaitTime: 0
+  audioClips:
+  - {fileID: 8300000, guid: b226c58a70fff5548ba841f13560ba4f, type: 3}
+  - {fileID: 8300000, guid: b226c58a70fff5548ba841f13560ba4f, type: 3}
+  - {fileID: 8300000, guid: c73e9a8536167dd498a238246fe39084, type: 3}
+  - {fileID: 8300000, guid: b226c58a70fff5548ba841f13560ba4f, type: 3}
+  - {fileID: 8300000, guid: d5ea0acba09595d40860d1dff1f60e33, type: 3}
+  - {fileID: 8300000, guid: d5ea0acba09595d40860d1dff1f60e33, type: 3}
+  - {fileID: 8300000, guid: d5ea0acba09595d40860d1dff1f60e33, type: 3}
+  roomNames:
+  - Room 1
+  - Room 2 (Turret and Ogre)
+  - Room 3 (Lake Room)
+  - Room 4
+  - Room 5 (Treasure Chest Room)
+  - Room 6
+  - Room 7
+  fadeWaitTime: 0.125
 --- !u!82 &2398270758763626720
 AudioSource:
   m_ObjectHideFlags: 0
