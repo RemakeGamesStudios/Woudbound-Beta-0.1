@@ -85,7 +85,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 60751345
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: a9f4791a3e68b423c932d4299d8340a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -116,7 +116,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &2612092169216062119
 BoxCollider2D:
@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
+  currentRoom: 
   speed: 4
   currentHealth: {fileID: 11400000, guid: d2056c37fff324b6cb19ce1eff22f208, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: bced594b110fa4728b35d89a74a89552, type: 2}
@@ -165,12 +166,12 @@ MonoBehaviour:
   receivedItemSprite: {fileID: 704708568}
   playerHit: {fileID: 11400000, guid: 88d14e053d4eb41c2bb3d149bf8c6a2b, type: 2}
   reduceMagic: {fileID: 11400000, guid: b02576586f0b34ec995f4c3ac0c59d97, type: 2}
-  flashColor: {r: 0, g: 0, b: 0, a: 0}
-  regularColor: {r: 0, g: 0, b: 0, a: 0}
-  flashDuration: 0
-  numberOfFlashes: 0
-  triggerCollider: {fileID: 0}
-  mySprite: {fileID: 0}
+  flashColor: {r: 0.9528302, g: 0, b: 0, a: 0.59607846}
+  regularColor: {r: 1, g: 1, b: 1, a: 1}
+  flashDuration: 0.07
+  numberOfFlashes: 4
+  triggerCollider: {fileID: 2612167626781133581}
+  mySprite: {fileID: 2768469706020739213}
   projectile: {fileID: 3744009350860767988, guid: 867e6729d90a2418c8132eeebbc50fa0,
     type: 3}
   bow: {fileID: 11400000, guid: 6ae3881435cfd451fa85ea829a3dd36d, type: 2}

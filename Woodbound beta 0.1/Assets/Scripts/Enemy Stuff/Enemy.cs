@@ -76,6 +76,7 @@ public class Enemy : MonoBehaviour {
         {
             GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(effect, deathEffectDelay);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
     }
 
