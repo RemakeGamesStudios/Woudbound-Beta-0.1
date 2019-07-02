@@ -32,6 +32,7 @@ public class MeleeEnemy : log
                 changeAnim(temp - transform.position);
                 myRigidbody.MovePosition(temp);
                 ChangeState(EnemyState.walk);
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             }
         }
         else if (Vector3.Distance(target.position,
