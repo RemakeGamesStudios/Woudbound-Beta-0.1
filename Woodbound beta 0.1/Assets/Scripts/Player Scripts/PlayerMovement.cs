@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour {
 
 
     public PlayerState currentState;
+    public string currentRoom; // tracks current room
     public float speed;
     private Rigidbody2D myRigidbody;
     private Vector3 change;
