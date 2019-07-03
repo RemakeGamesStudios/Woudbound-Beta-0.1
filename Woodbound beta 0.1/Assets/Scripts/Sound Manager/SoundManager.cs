@@ -34,7 +34,7 @@ public class SoundManager : MonoBehaviour
     private void Start()
     {
         playerAttackSound = Resources.Load<AudioClip>("playerAttack");
-        playerWalkSound = Resources.Load<AudioClip>("playerWalk");
+        playerWalkSound = Resources.Load<AudioClip>("playerWalk - Copy");
 
         audioSource = GetComponent<AudioSource>();
 

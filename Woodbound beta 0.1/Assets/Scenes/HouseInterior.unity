@@ -278,6 +278,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: fb292536d8b8a41db9a0939473347904,
         type: 2}
+    - target: {fileID: 114276173758575410, guid: fd049652bcd20467b823ff5b510871d6,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: TrailerScene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd049652bcd20467b823ff5b510871d6, type: 3}
 --- !u!1 &787933564
@@ -305,7 +310,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787933564}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &787933566
 Camera:
   m_ObjectHideFlags: 0
@@ -1861,11 +1866,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2036204152, guid: 4aa1c16861c294d39b085fd045dc4a4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.83
+      value: -0.65
       objectReference: {fileID: 0}
     - target: {fileID: 2036204152, guid: 4aa1c16861c294d39b085fd045dc4a4b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.85
+      value: -1.36
       objectReference: {fileID: 0}
     - target: {fileID: 2036204152, guid: 4aa1c16861c294d39b085fd045dc4a4b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3782,6 +3787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AudioMan
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398270758763626722, guid: 5817dc80264c0434ca7c6bd85a8400df,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2398270758763626721, guid: 5817dc80264c0434ca7c6bd85a8400df,
         type: 3}
