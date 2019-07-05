@@ -24,9 +24,9 @@ public class CameraMovement : MonoBehaviour {
         anim = GetComponent<Animator>();
         transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
 	}
-	
-	// Update is called once per frame
-	void LateUpdate () {
+
+    // Update is called once per frame
+    void LateUpdate () {
         if(transform.position != target.position)
         {
             Vector3 targetPosition = new Vector3(target.position.x,
@@ -43,6 +43,7 @@ public class CameraMovement : MonoBehaviour {
                                              targetPosition, smoothing);
             //transform.position = Vector3.Lerp(transform.position,
             //                                 targetPosition, smoothing);
+           
         }
     }
 
