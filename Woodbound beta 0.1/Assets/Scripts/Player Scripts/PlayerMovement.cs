@@ -14,7 +14,7 @@ public enum PlayerState
 public class PlayerMovement : MonoBehaviour
 {
 
-
+    public float time = 1.5f;
     public PlayerState currentState;
     public string currentRoom; // tracks current room
     public float speed;
@@ -108,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
         if (isSpinAttack)
         {
             animator.SetBool("attackingSpin", false);
-            yield return new WaitForSeconds(.7f);
+            yield return new WaitForSeconds(time);
         }
         else
         {

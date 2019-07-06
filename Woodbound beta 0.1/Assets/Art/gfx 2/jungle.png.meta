@@ -272,6 +272,12 @@ TextureImporter:
   - first:
       213: 6064912422228508088
     second: jungle_89
+  - first:
+      213: -3577017736042925272
+    second: jungle_90
+  - first:
+      213: 5830207253492721393
+    second: jungle_91
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -2231,7 +2237,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2239,6 +2245,48 @@ TextureImporter:
       bones: []
       spriteID: 9611dfb0243dc8444b3103722317dc71
       internalID: 6064912422228508088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jungle_90
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 658
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880786c025de2c84cbad7dbbf288ab54
+      internalID: -3577017736042925272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jungle_91
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 662
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6243a9a228644b64197f39287bf4548f
+      internalID: 5830207253492721393
       vertices: []
       indices: 
       edges: []
