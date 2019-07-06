@@ -269,6 +269,9 @@ TextureImporter:
   - first:
       213: -4972083290539346120
     second: jungle_88
+  - first:
+      213: 6064912422228508088
+    second: jungle_89
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -2215,6 +2218,27 @@ TextureImporter:
       bones: []
       spriteID: 63f3a9850f0b872438d7d7d2d39f2a89
       internalID: -4972083290539346120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jungle_89
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 689
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9611dfb0243dc8444b3103722317dc71
+      internalID: 6064912422228508088
       vertices: []
       indices: 
       edges: []
