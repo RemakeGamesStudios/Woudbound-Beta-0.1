@@ -22,10 +22,10 @@ public class TreasureChest : Interactable {
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
-        isOpen = storedOpen.RuntimeValue;
+        isOpen = false;
         if(isOpen)
         {
-            anim.SetBool("opened", true);
+            anim.SetBool("opened", false);
         }
     }
 	
