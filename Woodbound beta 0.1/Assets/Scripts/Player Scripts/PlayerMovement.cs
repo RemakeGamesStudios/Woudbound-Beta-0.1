@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PlayerState{
+public enum PlayerState
+{
     walk,
     attack,
     interact,
@@ -10,8 +11,8 @@ public enum PlayerState{
     idle
 }
 
-public class PlayerMovement : MonoBehaviour {
-
+public class PlayerMovement : MonoBehaviour
+{
 
     public PlayerState currentState;
     public string currentRoom; // tracks current room
@@ -43,7 +44,8 @@ public class PlayerMovement : MonoBehaviour {
     private bool prevMovingState = false;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         //reserting playerHealth in the ScriptableObject
         currentHealth.RuntimeValue = currentHealth.initialValue; // 6
         currentState = PlayerState.walk;
@@ -52,22 +54,28 @@ public class PlayerMovement : MonoBehaviour {
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
         transform.position = startingPosition.initialValue;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         // Is the player in an interaction
-        if(currentState == PlayerState.interact)
+        if (currentState == PlayerState.interact)
         {
             return;
         }
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-        if(Input.GetButtonDown("attack") && currentState != PlayerState.attack 
+        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack
            && currentState != PlayerState.stagger)
         {
-            StartCoroutine(AttackCo());
+            StartCoroutine(AttackCo(false));
+        }
+        else if (Input.GetKeyDown(KeyCode.T) && currentState != PlayerState.attack
+           && currentState != PlayerState.stagger)
+        {
+            StartCoroutine(AttackCo(true));
         }
         else if (Input.GetButtonDown("Second Weapon") && currentState != PlayerState.attack
            && currentState != PlayerState.stagger)
@@ -81,16 +89,31 @@ public class PlayerMovement : MonoBehaviour {
         {
             UpdateAnimationAndMove();
         }
-	}
+    }
 
-    private IEnumerator AttackCo()
+    private IEnumerator AttackCo(bool isSpinAttack)
     {
-        animator.SetBool("attacking", true);
+        if (isSpinAttack)
+        {
+            animator.SetBool("attackingSpin", true);
+        }
+        else
+        {
+            animator.SetBool("attacking", true);
+        }
         SoundManager.instance.PlaySound("playerAttack");
         currentState = PlayerState.attack;
         yield return null;
-        animator.SetBool("attacking", false);
-        yield return new WaitForSeconds(.3f);
+        if (isSpinAttack)
+        {
+            animator.SetBool("attackingSpin", false);
+            yield return new WaitForSeconds(.7f);
+        }
+        else
+        {
+            animator.SetBool("attacking", false);
+            yield return new WaitForSeconds(.3f);
+        }
         if (currentState != PlayerState.interact)
         {
             currentState = PlayerState.walk;
@@ -125,7 +148,7 @@ public class PlayerMovement : MonoBehaviour {
 
     Vector3 ChooseArrowDirection()
     {
-        float temp = Mathf.Atan2(animator.GetFloat("moveY"), animator.GetFloat("moveX"))* Mathf.Rad2Deg;
+        float temp = Mathf.Atan2(animator.GetFloat("moveY"), animator.GetFloat("moveX")) * Mathf.Rad2Deg;
         return new Vector3(0, 0, temp);
     }
 
@@ -160,7 +183,7 @@ public class PlayerMovement : MonoBehaviour {
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
             animator.SetBool("moving", true);
-            if(prevMovingState == false)
+            if (prevMovingState == false)
             {
                 SoundManager.instance.PlaySound("playerWalk");
                 prevMovingState = true;
@@ -193,14 +216,16 @@ public class PlayerMovement : MonoBehaviour {
         {
             playerHit.Raise();
             StartCoroutine(KnockCo(knockTime));
-        }else{
+        }
+        else
+        {
             this.gameObject.SetActive(false);
         }
     }
 
     private IEnumerator KnockCo(float knockTime)
     {
-            Debug.Log(knockTime);
+        Debug.Log(knockTime);
         if (myRigidbody != null)
         {
             Debug.Log(knockTime);
@@ -216,7 +241,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         int temp = 0;
         triggerCollider.enabled = false;
-        while(temp < numberOfFlashes)
+        while (temp < numberOfFlashes)
         {
             mySprite.color = flashColor;
             yield return new WaitForSeconds(flashDuration);

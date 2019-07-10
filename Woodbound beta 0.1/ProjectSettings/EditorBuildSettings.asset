@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dungeon.unity
     guid: 40904363d6f8d43db97e802d34cf6b55
+  - enabled: 1
+    path: Assets/Scenes/TrailerScene.unity
+    guid: f3e813fc78d967a40a00f5fc4589e438
   m_configObjects: {}

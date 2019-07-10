@@ -198,10 +198,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 0
         y: 128
-        width: 15
-        height: 12
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,7 +209,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6329bc42b7644034985226188f2d1b53
+      spriteID: e03ccbeb52a263848bd7ca86efbcc6e2
       internalID: -6043722885062928248
       vertices: []
       indices: 
@@ -219,10 +219,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_1
       rect:
         serializedVersion: 2
-        x: 44
-        y: 130
-        width: 15
-        height: 13
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,7 +230,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 314369f65c9116947b136b6ec01d15aa
+      spriteID: c44143739e1d1664c91fca6cd226c0a8
       internalID: 1736468260585131983
       vertices: []
       indices: 
@@ -240,10 +240,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 131
-        width: 16
-        height: 12
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,7 +251,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98235e786e075a949a27d1e7a0052e09
+      spriteID: 73b1e332fcbe12c4f9e45a5c5d0ee045
       internalID: -5917056459568176150
       vertices: []
       indices: 
@@ -261,10 +261,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_3
       rect:
         serializedVersion: 2
-        x: 108
-        y: 130
-        width: 14
-        height: 12
+        x: 96
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,7 +272,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7467d30a284f87847bf8598dde3d5691
+      spriteID: 3837335036096034cbee589659a3bd1b
       internalID: 5442668025183635835
       vertices: []
       indices: 
@@ -282,10 +282,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_4
       rect:
         serializedVersion: 2
-        x: 140
+        x: 128
         y: 128
-        width: 15
-        height: 13
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,7 +293,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88fe8e7b50fd67f40a664bb313b31eb0
+      spriteID: cf8859cfc9d46fe4294ad6ec12a4a615
       internalID: 2845003245396657968
       vertices: []
       indices: 
@@ -303,10 +303,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_5
       rect:
         serializedVersion: 2
-        x: 171
-        y: 130
-        width: 14
-        height: 12
+        x: 160
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,7 +314,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 749514b8b4a3f9845aa0aa995892b140
+      spriteID: 4d8f595c7bec1ae4f98391b6a8dfd47b
       internalID: 7697551568486098639
       vertices: []
       indices: 
@@ -324,10 +324,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_6
       rect:
         serializedVersion: 2
-        x: 203
-        y: 131
-        width: 15
-        height: 11
+        x: 192
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,7 +335,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27a1a3d9ef3029846b0642c954358330
+      spriteID: 1c4ad56f75119ec49b465db4f5174c3a
       internalID: -2426924010806381780
       vertices: []
       indices: 
@@ -345,10 +345,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_7
       rect:
         serializedVersion: 2
-        x: 235
-        y: 130
-        width: 12
-        height: 11
+        x: 224
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,7 +356,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74d4fc5fa2b2d39498eb924de112a70e
+      spriteID: ec9d79fd4655545498aa22e6af613320
       internalID: 7410080146306890404
       vertices: []
       indices: 
@@ -366,10 +366,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_8
       rect:
         serializedVersion: 2
-        x: 76
+        x: 64
         y: 96
-        width: 9
-        height: 13
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -377,7 +377,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccec9b6ae43026e4b89da9064afccf52
+      spriteID: 0f18ecf36249b7348a301a59a14c25fb
       internalID: 8018031288305256473
       vertices: []
       indices: 
@@ -387,10 +387,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_9
       rect:
         serializedVersion: 2
-        x: 108
+        x: 96
         y: 96
-        width: 9
-        height: 12
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -398,7 +398,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc62e9651e9971b43a7bcbbbf8d91418
+      spriteID: 797127486ff638d4db8b8049c8704845
       internalID: -2821372298894140586
       vertices: []
       indices: 
@@ -408,10 +408,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_10
       rect:
         serializedVersion: 2
-        x: 140
+        x: 128
         y: 96
-        width: 9
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -419,7 +419,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 856bd9de92c631047a552914757c7766
+      spriteID: 8b527072aeabcba4f96493770185308c
       internalID: -6838486396416424278
       vertices: []
       indices: 
@@ -429,10 +429,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_11
       rect:
         serializedVersion: 2
-        x: 172
+        x: 160
         y: 96
-        width: 9
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,7 +440,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 871c11fb73585b947825b566a02ca15e
+      spriteID: 4c66d40bc3c9a6d498ca4d68a22c68fb
       internalID: -1688409721503892938
       vertices: []
       indices: 
@@ -450,10 +450,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_12
       rect:
         serializedVersion: 2
-        x: 204
+        x: 192
         y: 96
-        width: 9
-        height: 14
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -461,7 +461,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37bca33eb20607c4aadac181902a1549
+      spriteID: 7d014f630796af143afa2113b7fc4073
       internalID: -446007999457256930
       vertices: []
       indices: 
@@ -471,10 +471,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_13
       rect:
         serializedVersion: 2
-        x: 236
+        x: 224
         y: 96
-        width: 9
-        height: 15
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -482,7 +482,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d239ab4ca625c2418c793fb1d40f2be
+      spriteID: be969abecbd7a45479c249efa76acae4
       internalID: -6779914543153974186
       vertices: []
       indices: 
@@ -492,10 +492,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_14
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 64
-        width: 17
-        height: 13
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -503,7 +503,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fb681403a675d2469050ddf85a8ea86
+      spriteID: a33709822b0239b45bd9a606e4a3778f
       internalID: -7363287123145459669
       vertices: []
       indices: 
@@ -513,10 +513,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_15
       rect:
         serializedVersion: 2
-        x: 34
+        x: 32
         y: 64
-        width: 19
-        height: 13
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -524,7 +524,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9dd3354b81a8634181fc4456d120e41
+      spriteID: 2ac5cc7bc26c37049b1dfaf212ed3ced
       internalID: -3378521420296804048
       vertices: []
       indices: 
@@ -534,10 +534,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_16
       rect:
         serializedVersion: 2
-        x: 66
-        y: 68
-        width: 6
-        height: 4
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -545,7 +545,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53e32552b69444d44bee51229ad7a04d
+      spriteID: c3f231a939957364cbf234c5e61e4f7c
       internalID: 1387231739103661874
       vertices: []
       indices: 
@@ -555,10 +555,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_17
       rect:
         serializedVersion: 2
-        x: 76
+        x: 96
         y: 64
-        width: 9
-        height: 13
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -566,7 +566,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a515133e5abc7234e8cbc9bf92901a56
+      spriteID: 6135ed2146b263d49adb110db75ada72
       internalID: 3854983563468285842
       vertices: []
       indices: 
@@ -576,10 +576,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_18
       rect:
         serializedVersion: 2
-        x: 101
+        x: 128
         y: 64
-        width: 16
-        height: 12
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,7 +587,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61526328e50a9f8429db9f5a01a6ad6b
+      spriteID: 11a17957f7b95ee4785873164b9a0f0b
       internalID: -3920796345226406153
       vertices: []
       indices: 
@@ -597,10 +597,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_19
       rect:
         serializedVersion: 2
-        x: 137
+        x: 160
         y: 64
-        width: 12
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -608,7 +608,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f25c3f04aafb2f4496818473e57dde0
+      spriteID: 30e8c5ea595b7424ea49639e44f698c9
       internalID: 5632374671720269339
       vertices: []
       indices: 
@@ -618,10 +618,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_20
       rect:
         serializedVersion: 2
-        x: 171
+        x: 192
         y: 64
-        width: 11
-        height: 17
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -629,7 +629,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5e6141013589284f811704a79b7103d
+      spriteID: 2aab4cc4755b7eb45ae99e487b9f261b
       internalID: -4518572715108363925
       vertices: []
       indices: 
@@ -639,10 +639,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_21
       rect:
         serializedVersion: 2
-        x: 203
+        x: 224
         y: 64
-        width: 11
-        height: 15
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -650,7 +650,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f59227c536161b47aff288bf5d562b1
+      spriteID: 4134db724eeecf044a182c26a8d2740b
       internalID: -3767250432585913094
       vertices: []
       indices: 
@@ -660,10 +660,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_22
       rect:
         serializedVersion: 2
-        x: 236
-        y: 64
-        width: 9
-        height: 15
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -671,7 +671,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4a7449f9ab04d140b0193d886c55cec
+      spriteID: 13ad61fcca6e56540b9d59849c11c981
       internalID: 2669276998145078943
       vertices: []
       indices: 
@@ -681,10 +681,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_23
       rect:
         serializedVersion: 2
-        x: 76
+        x: 96
         y: 32
-        width: 9
-        height: 13
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -692,7 +692,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1405ad17bb19b2d40a2fdfc894932ab1
+      spriteID: 6a56395b579600c43bd5570f7d970936
       internalID: 6997106924488489706
       vertices: []
       indices: 
@@ -702,10 +702,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_24
       rect:
         serializedVersion: 2
-        x: 108
+        x: 128
         y: 32
-        width: 9
-        height: 12
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -713,7 +713,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45e4c059d8ced3f48b3f40a83d6cd7ba
+      spriteID: 5ec761e4e109a0246a37c6417a4d591b
       internalID: -4508994779699940663
       vertices: []
       indices: 
@@ -723,10 +723,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_25
       rect:
         serializedVersion: 2
-        x: 140
+        x: 160
         y: 32
-        width: 9
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -734,7 +734,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89a1a32028b2cf9438fa705d6221b90a
+      spriteID: a6c9698b443916547ab2283337400d7c
       internalID: -8449405830111005164
       vertices: []
       indices: 
@@ -744,10 +744,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_26
       rect:
         serializedVersion: 2
-        x: 172
+        x: 192
         y: 32
-        width: 9
-        height: 15
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -755,7 +755,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e76c13a85de30d4bad7fbfe22f7f9c0
+      spriteID: 326c3bcd08853a1429177fa7f098d338
       internalID: 2554248570344794813
       vertices: []
       indices: 
@@ -765,10 +765,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_27
       rect:
         serializedVersion: 2
-        x: 204
+        x: 224
         y: 32
-        width: 9
-        height: 13
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -776,7 +776,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8bac8fc4f829da44a4dff9f7142a51a
+      spriteID: aeedcb74a00aa3249a417fee9ea3338e
       internalID: -4189937018269777888
       vertices: []
       indices: 
@@ -786,10 +786,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_28
       rect:
         serializedVersion: 2
-        x: 236
-        y: 32
-        width: 9
-        height: 15
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -797,7 +797,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b5eeaeebe7229e4ba039b4a08689a38
+      spriteID: 029c1c873425aa74e8835de082029c50
       internalID: -8920083118143706778
       vertices: []
       indices: 
@@ -807,10 +807,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_29
       rect:
         serializedVersion: 2
-        x: 12
+        x: 32
         y: 0
-        width: 9
-        height: 7
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -818,7 +818,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cf65b6d591ad1a4e8ecedc4ef4c9888
+      spriteID: 6cf669add9a18c54f9404e02e5faa836
       internalID: 3716277109542259194
       vertices: []
       indices: 
@@ -828,10 +828,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_30
       rect:
         serializedVersion: 2
-        x: 44
+        x: 64
         y: 0
-        width: 9
-        height: 7
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -839,7 +839,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c95f22dffd1fca4c880963613ae69e9
+      spriteID: 0af968f6401b7df418f9e8f58b5c0bc8
       internalID: -5207457945442246648
       vertices: []
       indices: 
@@ -849,10 +849,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_31
       rect:
         serializedVersion: 2
-        x: 76
+        x: 96
         y: 0
-        width: 9
-        height: 8
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -860,7 +860,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46b8922c2892aa945b967c53fb6adaf3
+      spriteID: 69a909bc8af5987429f799387b3931f3
       internalID: 4574972644297262627
       vertices: []
       indices: 
@@ -870,10 +870,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_32
       rect:
         serializedVersion: 2
-        x: 108
+        x: 128
         y: 0
-        width: 9
-        height: 9
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -881,7 +881,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31ca3dbf2b0133b499bd63da5823f089
+      spriteID: 4a693b89fd1a78948bcf030410f79065
       internalID: 4089242477648890176
       vertices: []
       indices: 
@@ -891,10 +891,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_33
       rect:
         serializedVersion: 2
-        x: 140
+        x: 160
         y: 0
-        width: 9
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -902,7 +902,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3809c59cd886130408be3c6de681ecd1
+      spriteID: 4db9edfcfcda82f40ac88edb41736300
       internalID: -5700760161097689875
       vertices: []
       indices: 
@@ -912,10 +912,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_34
       rect:
         serializedVersion: 2
-        x: 172
+        x: 192
         y: 0
-        width: 9
-        height: 15
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -923,7 +923,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d649b10b5072eba4482923fd712c39cd
+      spriteID: 143aafb0299030c41b068ab45601ea72
       internalID: -4383643391563734892
       vertices: []
       indices: 
@@ -933,10 +933,10 @@ TextureImporter:
       name: Fire Elemental Sprite Sheet Left_35
       rect:
         serializedVersion: 2
-        x: 204
+        x: 224
         y: 0
-        width: 9
-        height: 13
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -944,29 +944,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35113762fb2cf9f4bbaabb33812c33cb
+      spriteID: f37c91ae18415a045b57b4cbe3b3eecf
       internalID: -3763447313495186812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire Elemental Sprite Sheet Left_36
-      rect:
-        serializedVersion: 2
-        x: 236
-        y: 0
-        width: 9
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28e34451dfe2ee340bccfec765274038
-      internalID: 7694428297739129103
       vertices: []
       indices: 
       edges: []
