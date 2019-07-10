@@ -6149,12 +6149,12 @@ PrefabInstance:
     - target: {fileID: 1278596210755248723, guid: 2ff5474253f034506944421ac26d0dd8,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1278596210755248723, guid: 2ff5474253f034506944421ac26d0dd8,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 1278596211261867859, guid: 2ff5474253f034506944421ac26d0dd8,
         type: 3}
@@ -9267,21 +9267,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5689132140921955120, guid: 952013e8433947f4791b97f11e725d6d,
-        type: 3}
-      propertyPath: attackRadius
-      value: 1.375
-      objectReference: {fileID: 0}
-    - target: {fileID: 5689132140921955120, guid: 952013e8433947f4791b97f11e725d6d,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5689132140921955120, guid: 952013e8433947f4791b97f11e725d6d,
-        type: 3}
-      propertyPath: chaseRadius
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5689132140921955121, guid: 952013e8433947f4791b97f11e725d6d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9336,6 +9321,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689132140921955120, guid: 952013e8433947f4791b97f11e725d6d,
+        type: 3}
+      propertyPath: attackRadius
+      value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689132140921955120, guid: 952013e8433947f4791b97f11e725d6d,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689132140921955120, guid: 952013e8433947f4791b97f11e725d6d,
+        type: 3}
+      propertyPath: chaseRadius
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 703966165, guid: 952013e8433947f4791b97f11e725d6d, type: 3}
       propertyPath: m_Offset.x
