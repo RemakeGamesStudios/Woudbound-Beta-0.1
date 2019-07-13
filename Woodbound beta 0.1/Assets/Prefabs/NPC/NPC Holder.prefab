@@ -168,8 +168,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278596211261867857}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.494, z: 0}
+  m_LocalScale: {x: 1.5, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1278596210755248723}
   m_RootOrder: 0
@@ -278,7 +278,7 @@ MonoBehaviour:
   playerInRange: 0
   dialogBox: {fileID: 0}
   dialogText: {fileID: 0}
-  dialog: 'I saw your father go into that cave South and East of here. . . '
+  dialog: Be carful there are ogre's ahead!
   speed: 2
   bounds: {fileID: 1278596210507795264}
   minMoveTime: 1

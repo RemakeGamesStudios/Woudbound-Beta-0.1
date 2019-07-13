@@ -5558,6 +5558,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6917401321415854472, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
+        type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 2036204152}
     - target: {fileID: 2296094214650872959, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
@@ -5598,11 +5603,6 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
       value: -50
       objectReference: {fileID: 0}
-    - target: {fileID: 6917401321415854472, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
-        type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 2036204152}
     - target: {fileID: 1839897892, guid: d15a90b9cc0ea4fb5996e922ff3558d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.6
@@ -6296,6 +6296,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6917401321415854472, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
+        type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 2036204152}
     - target: {fileID: 2296094214650872959, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
@@ -6316,11 +6321,6 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
       value: -50
       objectReference: {fileID: 0}
-    - target: {fileID: 6917401321415854472, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
-        type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 2036204152}
     - target: {fileID: 1839897892, guid: d15a90b9cc0ea4fb5996e922ff3558d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.9
@@ -6413,6 +6413,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6917401321415854472, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
+        type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 2036204152}
     - target: {fileID: 2296094214650872959, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
@@ -6438,11 +6443,6 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
       value: 25
       objectReference: {fileID: 0}
-    - target: {fileID: 6917401321415854472, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
-        type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 2036204152}
     - target: {fileID: 1839897892, guid: d15a90b9cc0ea4fb5996e922ff3558d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.3
@@ -7036,6 +7036,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6917401321415854472, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
+        type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 2036204152}
     - target: {fileID: 2296094214650872959, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
@@ -7066,11 +7071,16 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
       value: -25
       objectReference: {fileID: 0}
-    - target: {fileID: 6917401321415854472, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
+    - target: {fileID: 2296094214650872958, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
         type: 3}
-      propertyPath: m_Follow
+      propertyPath: enemies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2296094214650872958, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
+        type: 3}
+      propertyPath: enemies.Array.data[0]
       value: 
-      objectReference: {fileID: 2036204152}
+      objectReference: {fileID: 648645620}
     - target: {fileID: 1839897892, guid: d15a90b9cc0ea4fb5996e922ff3558d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.8
@@ -7099,16 +7109,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area Log/NPC Room
       objectReference: {fileID: 0}
-    - target: {fileID: 2296094214650872958, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
-        type: 3}
-      propertyPath: enemies.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2296094214650872958, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
-        type: 3}
-      propertyPath: enemies.Array.data[0]
-      value: 
-      objectReference: {fileID: 648645620}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d15a90b9cc0ea4fb5996e922ff3558d3, type: 3}
 --- !u!1 &2024825208
@@ -7670,6 +7670,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6917401321415854472, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
+        type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 2036204152}
     - target: {fileID: 2296094214650872959, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
@@ -7710,11 +7715,6 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
       value: -12.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6917401321415854472, guid: d15a90b9cc0ea4fb5996e922ff3558d3,
-        type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 2036204152}
     - target: {fileID: 1839897892, guid: d15a90b9cc0ea4fb5996e922ff3558d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.2
