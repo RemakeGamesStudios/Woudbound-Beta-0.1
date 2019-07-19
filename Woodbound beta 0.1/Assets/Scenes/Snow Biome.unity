@@ -26128,12 +26128,38 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -8575078283694183779, guid: c575af24d5c5a9545b8d93b5531a3851,
+      objectReference: {fileID: 8015666111206221396, guid: c575af24d5c5a9545b8d93b5531a3851,
         type: 3}
     - target: {fileID: 669009954885714372, guid: fd5379ec6efa6e14a920167fc0c9cd77,
         type: 3}
       propertyPath: roomSignal
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 669009954885714426, guid: fd5379ec6efa6e14a920167fc0c9cd77,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 36738c8618dc9394d93cdbedc2b598a2,
+        type: 2}
+    - target: {fileID: 669009953196150718, guid: fd5379ec6efa6e14a920167fc0c9cd77,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669009954124050532, guid: fd5379ec6efa6e14a920167fc0c9cd77,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669009954304594576, guid: fd5379ec6efa6e14a920167fc0c9cd77,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669009955162026298, guid: fd5379ec6efa6e14a920167fc0c9cd77,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd5379ec6efa6e14a920167fc0c9cd77, type: 3}
