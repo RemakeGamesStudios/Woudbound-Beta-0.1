@@ -8,11 +8,12 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: cave_65
+  m_Name: Cave_65
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300130, guid: 13df0c437eae8462e8f08623eb510cec, type: 3}
+  m_Sprite: {fileID: -7240881190747209004, guid: 4c2f4f5da4fbd0445a8169a09e69311a,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
