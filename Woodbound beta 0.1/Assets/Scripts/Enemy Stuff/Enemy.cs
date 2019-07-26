@@ -31,6 +31,9 @@ public class Enemy : MonoBehaviour {
     [Header("Death Signals")]
     public Signal roomSignal;
 
+    [Header("Animator")]
+    public Animator anim;
+
     private void Awake()
     {
         health = maxHealth.initialValue;
