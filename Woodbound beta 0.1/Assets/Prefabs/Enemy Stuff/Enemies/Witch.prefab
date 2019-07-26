@@ -351,7 +351,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.004169464, y: -0.37}
+  m_Offset: {x: -0.004169464, y: -0.68}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -362,7 +362,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.53, y: 0.47}
+  m_Size: {x: 0.6, y: 0.62}
   m_EdgeRadius: 0
 --- !u!61 &1860633222715390425
 BoxCollider2D:
@@ -377,7 +377,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.002216339, y: -0.13246441}
+  m_Offset: {x: -0.002216339, y: -0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -388,7 +388,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.71, y: 1.0443401}
+  m_Size: {x: 0.87, y: 1.38}
   m_EdgeRadius: 0
 --- !u!95 &1860633222715390426
 Animator:
@@ -432,11 +432,11 @@ MonoBehaviour:
     type: 3}
   thisLoot: {fileID: 11400000, guid: eef027b8e593d4b5c8ceeedfcd11c61b, type: 2}
   roomSignal: {fileID: 11400000, guid: 882c1e12fbcb849a4bfc8ee4d4562342, type: 2}
+  anim: {fileID: 1860633222715390426}
   myRigidbody: {fileID: 1860633222715390439}
   target: {fileID: 0}
   chaseRadius: 5
   attackRadius: 0.9
-  anim: {fileID: 1860633222715390426}
 --- !u!1 &1860633223173958320
 GameObject:
   m_ObjectHideFlags: 0
