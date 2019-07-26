@@ -47,7 +47,7 @@ public class SceneTransition : MonoBehaviour {
         yield return new WaitForSeconds(fadeWait);
         ResetCameraBounds();
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneToLoad);
-        while(!asyncOperation.isDone)
+       while(!asyncOperation.isDone)
         {
             yield return null;
         }

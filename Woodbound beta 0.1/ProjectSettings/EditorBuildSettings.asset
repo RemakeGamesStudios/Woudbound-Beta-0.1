@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TrailerScene.unity
     guid: f3e813fc78d967a40a00f5fc4589e438
+  - enabled: 1
+    path: Assets/Scenes/Snow Biome.unity
+    guid: 30cafb67584ebf646b921528ca084a31
   m_configObjects: {}

@@ -281,7 +281,7 @@ PrefabInstance:
     - target: {fileID: 114276173758575410, guid: fd049652bcd20467b823ff5b510871d6,
         type: 3}
       propertyPath: sceneToLoad
-      value: TrailerScene
+      value: SampleScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd049652bcd20467b823ff5b510871d6, type: 3}
@@ -3791,7 +3791,7 @@ PrefabInstance:
     - target: {fileID: 2398270758763626722, guid: 5817dc80264c0434ca7c6bd85a8400df,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2398270758763626721, guid: 5817dc80264c0434ca7c6bd85a8400df,
         type: 3}
