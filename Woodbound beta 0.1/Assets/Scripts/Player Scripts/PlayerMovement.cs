@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -208,7 +208,7 @@ public class PlayerMovement : MonoBehaviour
     public void Knock(float knockTime, float damage)
     {
         Debug.Log(currentHealth.RuntimeValue + " " + damage);
-        currentHealth.RuntimeValue -= damage / 100; // for trailer
+        currentHealth.RuntimeValue -= damage;// / 100; // for trailer
         //Debug.Log()
         playerHealthSignal.Raise();
         //currentHealth.RuntimeValue = 6;
