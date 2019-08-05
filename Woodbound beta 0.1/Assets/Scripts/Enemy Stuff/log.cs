@@ -11,10 +11,6 @@ public class log : Enemy {
     public float chaseRadius;
     public float attackRadius;
 
-    [Header("Animator")]
-    public Animator anim;
-
-
 	// Use this for initialization
 	void Start () {
         currentState = EnemyState.idle;

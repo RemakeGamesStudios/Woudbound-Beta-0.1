@@ -946,11 +946,11 @@ MonoBehaviour:
     type: 3}
   thisLoot: {fileID: 11400000, guid: eef027b8e593d4b5c8ceeedfcd11c61b, type: 2}
   roomSignal: {fileID: 11400000, guid: 882c1e12fbcb849a4bfc8ee4d4562342, type: 2}
+  anim: {fileID: 363485149}
   myRigidbody: {fileID: 363485152}
   target: {fileID: 2036204152}
   chaseRadius: 5
   attackRadius: 0.9
-  anim: {fileID: 363485149}
 --- !u!95 &363485149
 Animator:
   serializedVersion: 3
@@ -2039,11 +2039,11 @@ MonoBehaviour:
     type: 3}
   thisLoot: {fileID: 11400000, guid: eef027b8e593d4b5c8ceeedfcd11c61b, type: 2}
   roomSignal: {fileID: 11400000, guid: 882c1e12fbcb849a4bfc8ee4d4562342, type: 2}
+  anim: {fileID: 522282063}
   myRigidbody: {fileID: 522282066}
   target: {fileID: 2036204152}
   chaseRadius: 5
   attackRadius: 0.9
-  anim: {fileID: 522282063}
 --- !u!95 &522282063
 Animator:
   serializedVersion: 3
@@ -2958,11 +2958,11 @@ MonoBehaviour:
     type: 3}
   thisLoot: {fileID: 11400000, guid: eef027b8e593d4b5c8ceeedfcd11c61b, type: 2}
   roomSignal: {fileID: 11400000, guid: 882c1e12fbcb849a4bfc8ee4d4562342, type: 2}
+  anim: {fileID: 741603004}
   myRigidbody: {fileID: 741603007}
   target: {fileID: 2036204152}
   chaseRadius: 5
   attackRadius: 0.9
-  anim: {fileID: 741603004}
 --- !u!95 &741603004
 Animator:
   serializedVersion: 3
@@ -3242,11 +3242,11 @@ MonoBehaviour:
     type: 3}
   thisLoot: {fileID: 11400000, guid: eef027b8e593d4b5c8ceeedfcd11c61b, type: 2}
   roomSignal: {fileID: 11400000, guid: 882c1e12fbcb849a4bfc8ee4d4562342, type: 2}
+  anim: {fileID: 761101441}
   myRigidbody: {fileID: 761101444}
   target: {fileID: 2036204152}
   chaseRadius: 5
   attackRadius: 0.9
-  anim: {fileID: 761101441}
 --- !u!95 &761101441
 Animator:
   serializedVersion: 3
@@ -3582,11 +3582,11 @@ MonoBehaviour:
     type: 3}
   thisLoot: {fileID: 11400000, guid: eef027b8e593d4b5c8ceeedfcd11c61b, type: 2}
   roomSignal: {fileID: 11400000, guid: 882c1e12fbcb849a4bfc8ee4d4562342, type: 2}
+  anim: {fileID: 787288616}
   myRigidbody: {fileID: 787288619}
   target: {fileID: 2036204152}
   chaseRadius: 5
   attackRadius: 0.9
-  anim: {fileID: 787288616}
 --- !u!95 &787288616
 Animator:
   serializedVersion: 3
@@ -3790,11 +3790,11 @@ MonoBehaviour:
     type: 3}
   thisLoot: {fileID: 11400000, guid: eef027b8e593d4b5c8ceeedfcd11c61b, type: 2}
   roomSignal: {fileID: 11400000, guid: 882c1e12fbcb849a4bfc8ee4d4562342, type: 2}
+  anim: {fileID: 838022910}
   myRigidbody: {fileID: 838022913}
   target: {fileID: 2036204152}
   chaseRadius: 5
   attackRadius: 0.9
-  anim: {fileID: 838022910}
 --- !u!95 &838022910
 Animator:
   serializedVersion: 3
@@ -8336,6 +8336,16 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0.71
       objectReference: {fileID: 0}
+    - target: {fileID: 676457240082076984, guid: 062d849158b35f945a384389b70fb42a,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 676457240082076984, guid: 062d849158b35f945a384389b70fb42a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 062d849158b35f945a384389b70fb42a, type: 3}
 --- !u!1 &752167945325077735
@@ -8763,11 +8773,11 @@ MonoBehaviour:
     type: 3}
   thisLoot: {fileID: 0}
   roomSignal: {fileID: 0}
+  anim: {fileID: 0}
   myRigidbody: {fileID: 0}
   target: {fileID: 2036204152}
   chaseRadius: 6
   attackRadius: 0
-  anim: {fileID: 0}
   projectile: {fileID: 6274244446318384882, guid: 42de5307aa95341b9b239488c8163a91,
     type: 3}
   fireDelay: 0.7
@@ -10117,11 +10127,11 @@ MonoBehaviour:
     type: 3}
   thisLoot: {fileID: 11400000, guid: eef027b8e593d4b5c8ceeedfcd11c61b, type: 2}
   roomSignal: {fileID: 11400000, guid: 882c1e12fbcb849a4bfc8ee4d4562342, type: 2}
+  anim: {fileID: 7196989900434052419}
   myRigidbody: {fileID: 7196989900434052478}
   target: {fileID: 2036204152}
   chaseRadius: 5
   attackRadius: 0.9
-  anim: {fileID: 7196989900434052419}
 --- !u!50 &7196989900434052478
 Rigidbody2D:
   serializedVersion: 4

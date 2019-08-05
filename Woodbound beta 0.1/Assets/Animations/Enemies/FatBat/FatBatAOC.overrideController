@@ -8,4 +8,8 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: FatBatAOC
   m_Controller: {fileID: 9100000, guid: c88e01b14c1474eb18e387fa6c34a54a, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: fed54f76036794492b45d94bbe5cb395, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8abfea7af38dc144f9b6c0774c29f78a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0cd1f61fdd46d43419df21900287a9a1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e7c2fcc56e932d94a937e1ea3cfef385, type: 2}

@@ -29,27 +29,34 @@ public class InventoryManager : MonoBehaviour
 
     void MakeInventorySlots()
     {
-        if(playerInventory)
+        if (playerInventory)
         {
-            for(int i = 0; i < playerInventory.myInventory.Count; i ++)
+            for (int i = 0; i < playerInventory.myInventory.Count; i++)
             {
-                GameObject temp =
-                    Instantiate(blankInventorySlot, 
-                    inventoryPanel.transform.position, Quaternion.identity);
-                temp.transform.SetParent(inventoryPanel.transform);
-                InventorySlot newSlot = temp.GetComponent<InventorySlot>();
-                if(newSlot)
-                { 
-                    newSlot.Setup(playerInventory.myInventory[i], this);
+
+                if (playerInventory.myInventory[i].numberHeld > 0 || 
+                    playerInventory.myInventory[i].itemName == "Bottle")
+                {
+                    GameObject temp =
+                        Instantiate(blankInventorySlot,
+                        inventoryPanel.transform.position, Quaternion.identity);
+                    temp.transform.SetParent(inventoryPanel.transform);
+                    InventorySlot newSlot = temp.GetComponent<InventorySlot>();
+                    if (newSlot)
+                    {
+                        newSlot.Setup(playerInventory.myInventory[i], this);
+                    }
                 }
             }
         }
     }
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
+        ClearInventorySlots();
         MakeInventorySlots();
+        Debug.Log("made inventory");
         SetTextAndButton("", false);
     }
 
@@ -61,11 +68,27 @@ public class InventoryManager : MonoBehaviour
         useButton.SetActive(isButtonUsable);
     }
 
+    void ClearInventorySlots()
+    {
+        for(int i = 0; i < inventoryPanel.transform.childCount; i ++)
+        {
+            Destroy(inventoryPanel.transform.GetChild(i).gameObject);
+        }
+    }
+
     public void UseButtonPressed()
     {
         if(currentItem)
         {
             currentItem.Use();
+            //Clear all of the inventory slots
+            ClearInventorySlots();
+            //Refill all slots with new numbers
+            MakeInventorySlots();
+            if (currentItem.numberHeld == 0)
+            {
+                SetTextAndButton("", false);
+            }
         }
     }
 }

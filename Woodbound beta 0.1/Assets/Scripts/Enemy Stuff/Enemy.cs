@@ -25,11 +25,15 @@ public class Enemy : MonoBehaviour {
 
     [Header("Death Effects")]
     public GameObject deathEffect;
-    private float deathEffectDelay = 1f;
+    private float deathEffectDelay = 1.7f;
     public LootTable thisLoot;
+    public AnimationClip deathAnim;
 
     [Header("Death Signals")]
     public Signal roomSignal;
+
+    [Header("Animator")]
+    public Animator anim;
 
     private void Awake()
     {
@@ -48,13 +52,15 @@ public class Enemy : MonoBehaviour {
         health -= damage;
         if(health <= 0)
         {
-            DeathEffect();
-            MakeLoot();
+            //deathAnim.wrapMode = WrapMode.Once;
+            //anim.Play("dwarfDeath");
+            currentState = EnemyState.idle;
+            anim.SetBool("Death", true);
+            StartCoroutine(DeathEffect());
             if (roomSignal != null)
             {
                 roomSignal.Raise();
             }
-            this.gameObject.SetActive(false);
         }
     }
 
@@ -70,14 +76,18 @@ public class Enemy : MonoBehaviour {
         }
     }
 
-    private void DeathEffect()
+    private IEnumerator DeathEffect()
     {
         if(deathEffect != null)
         {
+            yield return new WaitForSeconds(2f);
+            anim.SetBool("Death", false);
             GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(effect, deathEffectDelay);
             GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
+        MakeLoot();
+        this.gameObject.SetActive(false);
     }
 
     public void Knock(Rigidbody2D myRigidbody, float knockTime, float damage)
