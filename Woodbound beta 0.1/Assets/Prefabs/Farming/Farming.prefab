@@ -98,7 +98,12 @@ MonoBehaviour:
   dialogText: {fileID: 0}
   dialog: This a farming patch. Press E to interact
   tilemap: {fileID: 0}
-  tileBase: {fileID: 11400000, guid: 800a7563853634537bca696b1f1ad8eb, type: 2}
+  tileBases:
+  - {fileID: 11400000, guid: 28e949decfcf04b81bce5f54173e421f, type: 2}
+  - {fileID: 11400000, guid: 259dab57720eb465f8d3a719936fcc0e, type: 2}
+  - {fileID: 11400000, guid: de106f68c967f477f9017070b918e418, type: 2}
+  - {fileID: 11400000, guid: 53182879d3a674d6bbc96a3924008b69, type: 2}
+  status: 
 --- !u!1 &7168221003380781399
 GameObject:
   m_ObjectHideFlags: 0
