@@ -5,8 +5,10 @@ using UnityEngine.Tilemaps;
 
 public class FarmingPatch : Sign
 {
+    [Header("TileMap related")]
     public Tilemap tilemap;
     public TileBase[] tileBases;
+
     [SerializeField]
     private string statusStr = "plough";
     [SerializeField]
@@ -14,6 +16,12 @@ public class FarmingPatch : Sign
     [SerializeField]
     private bool isFirstTime = true;
     private IEnumerator co;
+
+    [Header("Position of patch")]
+    public Vector3Int topLeftCorner;
+    public Vector3Int bottomRightCorner;
+
+    
 
     private void Start()
     {
@@ -51,8 +59,7 @@ public class FarmingPatch : Sign
                 break;
             }
             //play suitable animation for plough patch, sow seeds, tend, or harvest
-            Vector3Int pos = new Vector3Int(-57, 4, 0);
-            SetTiles(pos, i);
+            SetTiles(i);
             status = i;
             Debug.Log("growing " + i);
             yield return new WaitForSeconds(3f);
@@ -63,19 +70,24 @@ public class FarmingPatch : Sign
     private void Harvest()
     {
         Debug.Log("Harvesting!!");
-        Vector3Int pos = new Vector3Int(-57, 4, 0);
-        SetTiles(pos, 0);
+        SetTiles(0);
         status = 0;
         isFirstTime = true;
         co = UpdatePatchStatus();
     }
 
-    private void SetTiles(Vector3Int pos, int i)
+    private void SetTiles(int i)
     {
-        for (int j = 0; j < 3; j++)
+        Vector3Int pos = topLeftCorner;
+        for (int k = 0; k < bottomRightCorner.x - topLeftCorner.x + 1; k++)
         {
-            tilemap.SetTile(pos, tileBases[i]);
-            pos.y++;
+            for (int j = 0; j < topLeftCorner.y - bottomRightCorner.y + 1; j++)
+            {
+                tilemap.SetTile(pos, tileBases[i]);
+                pos.y--;
+            }
+            pos.y += topLeftCorner.y - bottomRightCorner.y + 1;
+            pos.x++;
         }
     }
 
