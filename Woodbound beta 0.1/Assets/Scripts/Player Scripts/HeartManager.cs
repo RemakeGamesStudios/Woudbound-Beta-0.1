@@ -7,20 +7,15 @@ public class HeartManager : MonoBehaviour {
 
     public Image[] hearts;
     public Sprite fullHeart;
+    public Sprite threeQuartersFullHeart;
     public Sprite halfFullHeart;
+    public Sprite quarterFullHeart;
     public Sprite emptyHeart;
     public FloatValue heartContainers;
-    public FloatValue playerCurrentHealth;
-
-	// Use this for initialization
-	void Start () {
-        //InitHearts();
-        UpdateHearts();
-	}
 
     public void InitHearts()
     {
-        for (int i = 0; i < heartContainers.RuntimeValue; i ++)
+        for (int i = 0; i < heartContainers.RuntimeValue; i++)
         {
             if (i < hearts.Length)
             {
@@ -30,30 +25,36 @@ public class HeartManager : MonoBehaviour {
         }
     }
 
-    public void UpdateHearts()
+    public void UpdateHearts(float currentHealth)
     {
         InitHearts();
-        //makes sure player does not have more then 5 health
-        if (playerCurrentHealth.RuntimeValue > 5)
+        
+        for (int i = 0; i < 6; i ++)
         {
-            playerCurrentHealth.RuntimeValue = 5;
-        }
-        float tempHealth = playerCurrentHealth.RuntimeValue;
-
-        for (int i = 0; i < 5; i ++)
-        {
-            if (tempHealth - (i) <= .5 && tempHealth - (i) > 0)
+            if (currentHealth - (i) <= .25 && currentHealth - (i) > 0)
             {
-                //half full heart
-                 hearts[i].sprite = halfFullHeart;
-            }else if (i < tempHealth)
+                // 1/4 full heart
+                hearts[i].sprite = quarterFullHeart;
+            }
+            else if (currentHealth - (i) <= .5 && currentHealth - (i) > 0.25)
             {
-                //Full Heart
+                // half full heart
+                hearts[i].sprite = halfFullHeart;
+            }
+            else if (currentHealth - (i) <= .75 && currentHealth - (i) > 0.5)
+            {
+                // 3/4 full heart
+                hearts[i].sprite = threeQuartersFullHeart;
+            }
+            else if (i < currentHealth)
+            {
+                // Full Heart
                 hearts[i].sprite = fullHeart;
-                
-            }else if( i >= tempHealth)
+
+            }
+            else if (i >= currentHealth)
             {
-                //empty heart
+                // empty heart
                 hearts[i].sprite = emptyHeart;
             }
             
