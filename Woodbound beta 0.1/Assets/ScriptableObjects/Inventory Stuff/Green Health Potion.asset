@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Large Magic Potion
   itemDescription: It smells really bad. . . but maybe that's good?
   itemImage: {fileID: 21300000, guid: a33f879b09c9857408ee79881c1ba757, type: 3}
-  numberHeld: 3
+  numberHeld: 1
   usable: 1
   unique: 0
   thisEvent:
@@ -33,3 +33,5 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

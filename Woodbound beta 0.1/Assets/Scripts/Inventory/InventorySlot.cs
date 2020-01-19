@@ -9,21 +9,10 @@ public class InventorySlot : MonoBehaviour
     [Header("UI Stuff to change")]
     [SerializeField] private TextMeshProUGUI itemNumberText;
     [SerializeField] private Image itemImage;
-    SecondaryHolder secondaryHolder;
 
     [Header("Variables from the item")]
     public InventoryItem thisItem;
     public InventoryManager thisManager;
-
-    private void Start()
-    {
-        secondaryHolder = FindObjectOfType<SecondaryHolder>();
-    }
-
-    private void Update()
-    {
-        if (thisItem && thisItem.numberHeld <= 0) Destroy(gameObject);
-    }
 
     public void Setup(InventoryItem newItem, InventoryManager newManager)
     {
@@ -36,15 +25,12 @@ public class InventorySlot : MonoBehaviour
         }
     }
 
-    public void ClickedOn()   
+    public void ClickedOn()
     {
-        Debug.Log("You clicked an item!");
-        Debug.Log("The item Description is " + thisItem.itemDescription);
         if(thisItem)
         {
             thisManager.SetupDescriptionAndButton(thisItem.itemDescription,
                 thisItem.usable, thisItem);
-            secondaryHolder.SetCurrentItem(thisItem);
         }
     }
 }

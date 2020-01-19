@@ -11,12 +11,11 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private GameObject blankInventorySlot;
     [SerializeField] private GameObject inventoryPanel;
     [SerializeField] private TextMeshProUGUI descriptionText;
-    [SerializeField] private GameObject useButton;  
+    [SerializeField] private GameObject useButton;
     public InventoryItem currentItem;
 
     public void SetTextAndButton(string description, bool buttonActive)
     {
-        // Fill the description and show up the use button if available
         descriptionText.text = description;
         if (buttonActive)
         {
@@ -30,31 +29,23 @@ public class InventoryManager : MonoBehaviour
 
     void MakeInventorySlots()
     {
-
         if (playerInventory)
         {
             for (int i = 0; i < playerInventory.myInventory.Count; i++)
             {
 
                 if (playerInventory.myInventory[i].numberHeld > 0 || 
-                    playerInventory.myInventory[i].itemName == "Bottle") 
+                    playerInventory.myInventory[i].itemName == "Bottle")
                 {
-                    // create a blankInventorySlot
                     GameObject temp =
                         Instantiate(blankInventorySlot,
                         inventoryPanel.transform.position, Quaternion.identity);
-                    // set the inventory to the right position which is under the position of inventory Panel
                     temp.transform.SetParent(inventoryPanel.transform);
-                    //setup the blank to player's inventoryItem[i]
-                    //***setup image
-                    //***setup number text
                     InventorySlot newSlot = temp.GetComponent<InventorySlot>();
                     if (newSlot)
                     {
-                        //extract the information from myInventory[i], and apply them to the newslot
                         newSlot.Setup(playerInventory.myInventory[i], this);
                     }
-                    newSlot.gameObject.transform.localScale = new Vector3(1, 1, 1);
                 }
             }
         }

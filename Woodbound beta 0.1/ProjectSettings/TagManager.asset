@@ -7,8 +7,6 @@ TagManager:
   - breakable
   - enemy
   - AudioMan
-  - Item
-  - playerskills
   layers:
   - Default
   - TransparentFX
@@ -45,9 +43,6 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: minimap
-    uniqueID: 2400225795
     locked: 0
   - name: Signs
     uniqueID: 1704460807

@@ -11,26 +11,12 @@ public class InventoryItem : ScriptableObject
     public Sprite itemImage;
     public int numberHeld;
     public bool usable;
-    public bool unique; //?
-    public UnityEvent thisEvent; //?
-    public bool isDurable;
-    public int Durability = 100;
+    public bool unique;
+    public UnityEvent thisEvent;
+
     public void Use()
     {
         Debug.Log("Using Item");
-        if (isDurable)
-        {
-            if (Durability <= 0)
-            {
-                numberHeld -= 1;
-                Durability = 100;
-            }
-            else Durability -= 40;
-        }
-        else
-        {
-            numberHeld -= 1;
-        }
         thisEvent.Invoke();
     }
 }
