@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,8 +8,11 @@ public class PauseManager : MonoBehaviour
 {
 
     private bool isPaused;
+    private bool isUsingInventory;
     public GameObject pausePanel;
     public GameObject inventoryPanel;
+    public GameObject amoryPanel;
+    public GameObject skillPanel;
     public bool usingPausePanel;
     public string mainMenu;
 
@@ -16,8 +20,10 @@ public class PauseManager : MonoBehaviour
     void Start()
     {
         isPaused = false;
+        isUsingInventory = false;
         pausePanel.SetActive(false);
         inventoryPanel.SetActive(false);
+        amoryPanel.SetActive(false);
         usingPausePanel = false;
     }
 
@@ -27,6 +33,36 @@ public class PauseManager : MonoBehaviour
         if(Input.GetButtonDown("pause"))
         {
             ChangePause();
+        }
+        if (Input.GetButtonDown("inventory"))
+        {
+            if (usingPausePanel)
+            {
+                SwitchPanels();
+            }
+            else
+            {
+                inventoryPanel.SetActive(true);
+            }
+            OpenInventory();
+        }
+
+    }
+
+    private void OpenInventory()
+    {
+        isUsingInventory = !isUsingInventory;
+        if (isUsingInventory)
+        {
+            inventoryPanel.SetActive(true);
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            inventoryPanel.SetActive(false);
+            amoryPanel.SetActive(false);
+            skillPanel.SetActive(false);
+            Time.timeScale = 1f;
         }
         
     }
@@ -44,6 +80,7 @@ public class PauseManager : MonoBehaviour
         {
             inventoryPanel.SetActive(false);
             pausePanel.SetActive(false);
+            skillPanel.SetActive(false);
             Time.timeScale = 1f;
         }
     }
@@ -67,6 +104,27 @@ public class PauseManager : MonoBehaviour
             inventoryPanel.SetActive(true);
             pausePanel.SetActive(false);
         }
+    }
+
+    public void SwitchToAmoryPanel()
+    {
+        inventoryPanel.SetActive(false);
+        amoryPanel.SetActive(true);
+        skillPanel.SetActive(false);
+    }
+
+    public void SwitchToSkillPanel()
+    {
+        inventoryPanel.SetActive(false);
+        amoryPanel.SetActive(false);
+        skillPanel.SetActive(true);
+    }
+
+    public void SwitchToInventoryPanel()
+    {
+        inventoryPanel.SetActive(true);
+        amoryPanel.SetActive(false);
+        skillPanel.SetActive(false);
     }
 
 }

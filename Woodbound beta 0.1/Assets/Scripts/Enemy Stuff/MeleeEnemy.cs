@@ -29,7 +29,7 @@ public class MeleeEnemy : log
                 Vector3 temp = Vector3.MoveTowards(transform.position,
                                                          target.position,
                                                          moveSpeed * Time.deltaTime);
-                changeAnim(temp - transform.position);
+                changeAnim(temp - transform.position); //temp - transform.position = how far the enemy moved for this frame
                 myRigidbody.MovePosition(temp);
                 ChangeState(EnemyState.walk);
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().velocity = Vector2.zero;
@@ -52,7 +52,6 @@ public class MeleeEnemy : log
             ChangeState(EnemyState.idle);
             anim.SetFloat("moveX", 0);
             anim.SetFloat("moveY", 0);
-
         }
 
     }
