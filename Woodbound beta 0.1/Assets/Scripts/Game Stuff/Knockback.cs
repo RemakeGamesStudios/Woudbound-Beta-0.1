@@ -7,9 +7,9 @@ public class Knockback : MonoBehaviour {
     public float thrust;
     public float knockTime = 1f;
     public float damage;
-
     private void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.gameObject.CompareTag("breakable") && this.gameObject.CompareTag("Player"))
         {
             other.GetComponent<pot>().Smash();
@@ -23,8 +23,10 @@ public class Knockback : MonoBehaviour {
                 difference = difference.normalized * thrust;
                 hit.AddForce(difference, ForceMode2D.Impulse);
                 //StartCoroutine(stopKnockBackCo(hit, difference));
-                if (other.gameObject.CompareTag("enemy") && other.isTrigger && 
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().currentState == PlayerState.attack)
+                if (other.gameObject.CompareTag("enemy") && other.isTrigger &&
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().currentState == PlayerState.attack||
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().currentState == PlayerState.cast||
+                    gameObject.CompareTag("Item"))
                 {
                     Debug.Log("hittt enemy");
                     hit.GetComponent<Enemy>().currentState = EnemyState.stagger;
@@ -32,11 +34,17 @@ public class Knockback : MonoBehaviour {
                 }
                 if (other.gameObject.CompareTag("Player"))
                 {
-                    if (other.GetComponent<PlayerMovement>().currentState != PlayerState.stagger)
+                    if (gameObject.CompareTag("playerskills")) return;
+                    if (other.GetComponent<PlayerController>().currentState != PlayerState.stagger)
                     {
                         Debug.Log("hittt player");
-                        hit.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
-                        other.GetComponent<PlayerMovement>().Knock(knockTime, damage); 
+                        if (hit.GetComponent<PlayerController>().currentState == PlayerState.shield)
+                        {
+                            Debug.Log("hittt player, but player is shielded!");
+                            return;
+                        }
+                        hit.GetComponent<PlayerController>().currentState = PlayerState.stagger;
+                        other.GetComponent<PlayerController>().Knock(knockTime, damage); 
                     }
                 }
             }
@@ -47,7 +55,7 @@ public class Knockback : MonoBehaviour {
     {
         yield return new WaitForSeconds(1f);
         hit.AddForce(-difference, ForceMode2D.Impulse);
-        hit.GetComponent<PlayerMovement>().currentState = PlayerState.idle;
+        hit.GetComponent<PlayerController>().currentState = PlayerState.idle;
     }
 
 }

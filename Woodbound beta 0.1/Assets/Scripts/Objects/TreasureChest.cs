@@ -1,20 +1,28 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class TreasureChest : Interactable {
 
     [Header("Contents")]
+    //item
     public Item contents;
     public Inventory playerInventory;
+    //skill orb
+    public Skills skill;
+    public PlayerSelectiveSkill playerSelectiveSkill;
+    public PlayerConstantSkill playerConstantSkill;
+
     public bool isOpen;
     public BoolValue storedOpen;
 
     [Header("Signals and Dialog")]
     public Signal raiseItem;
     public GameObject dialogBox;
-    public Text dialogText;
+    public TextMeshPro dialogText;
 
     [Header("Animation")]
     private Animator anim;
@@ -49,6 +57,15 @@ public class TreasureChest : Interactable {
     {
         // Dialog window on
         dialogBox.SetActive(true);
+        if (skill) CollectSkillOrbs();
+        else CollectItems();
+        isOpen = true;
+        anim.SetBool("opened", true);
+        storedOpen.RuntimeValue = isOpen;
+    }
+
+    private void CollectItems()
+    {
         // dialog text = contents text
         dialogText.text = contents.itemDescription;
         // add contents to the inventory
@@ -59,9 +76,13 @@ public class TreasureChest : Interactable {
         // raise the context clue
         context.Raise();
         // set the chest to opened
-        isOpen = true;
-        anim.SetBool("opened", true);
-        storedOpen.RuntimeValue = isOpen;
+    }
+
+    private void CollectSkillOrbs()
+    {
+        dialogText.text = skill.skillDescription;
+        if (skill.isSelective) playerSelectiveSkill.AddSkill(skill);
+        else playerConstantSkill.AddSkill(skill);
     }
 
     public void ChestAlreadyOpen()
@@ -74,6 +95,7 @@ public class TreasureChest : Interactable {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // whether player is in range
         if (other.CompareTag("Player") && !other.isTrigger && !isOpen)
         {
             context.Raise();
